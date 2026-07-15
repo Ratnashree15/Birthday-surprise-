@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Welcome Page -->
+<div id="welcomePage" class="page">
+    <h1>🎁 A Special Surprise Awaits You 🎁</h1>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+         alt="Cute Doll"
+         class="doll">
+
+    <button onclick="showLogin()">Open Gift 🎁</button>
+</div>
+
+<!-- Login Page -->
+<div id="loginPage" class="page" style="display:none;">
+    <h2>Enter Your Details 💙</h2>
+
+    <input type="text" id="name" placeholder="Enter Your Name">
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="checkPassword()">Open Surprise</button>
+
+    <p id="error"></p>
+</div>
+
+<!-- Birthday Page -->
+<div id="birthdayPage" class="page" style="display:none;">
+
+<h1 id="wish"></h1>
+
+<h2>🎂 Happy Birthday 🎂</h2>
+
+<p>
+💙 Happy Birthday!<br>
+May your wishes come true.
+</p>
+
+<div class="cake">🎂</div>
+
+<div class="balloons">
+🎈 🎈 🎈 🎈 🎈
+</div>
+
+<button onclick="celebrate()">Celebrate 🎉</button>
+
+<audio id="music" autoplay loop>
+<source src="birthday.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
