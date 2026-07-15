@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#d9f3ff;
+    text-align:center;
+}
+
+.page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.doll{
+    width:220px;
+    margin:20px;
+}
+
+input{
+    width:260px;
+    padding:12px;
+    margin:10px;
+    border-radius:10px;
+    border:2px solid #6ec6ff;
+    font-size:16px;
+}
+
+button{
+    background:#4fc3f7;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#29b6f6;
+}
+
+h1{
+    color:#0277bd;
+}
+
+h2{
+    color:#0288d1;
+}
+
+p{
+    color:#01579b;
+    font-size:20px;
+}
+
+.cake{
+    font-size:100px;
+    animation:bounce 1s infinite;
+}
+
+.balloons{
+    font-size:40px;
+    animation:float 2s infinite alternate;
+}
+
+#error{
+    color:red;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-20px);
+    }
+}
